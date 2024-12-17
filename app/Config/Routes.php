@@ -28,7 +28,7 @@ $routes->post('/update','UpdateData::update');
 
 //ubah password
 $routes->get('/change-password', 'PasswordController::index');
-$routes->post(' /updatepw', 'PassChangeController::update');
+$routes->post('/updatepw', 'PassChangeController::update');
 
 //login admin
 $routes->get('/adminlogin', 'AdminController::index'); 

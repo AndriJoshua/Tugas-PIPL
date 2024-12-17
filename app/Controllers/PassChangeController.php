@@ -8,7 +8,7 @@ class PassChangeController extends BaseController
 {
     public function update()
     {
-        dd($this->request->getMethod());
+        
         
             $email = session()->get('login');
             $currentPassword = md5($this->request->getPost('password'));
@@ -35,12 +35,6 @@ class PassChangeController extends BaseController
                 return redirect()->to('/change-password')->with('error', 'Gagal mengubah password.');
             }
         
-    }
-
-    public function updateadmin(){
-
-
-
     }
 
 }
